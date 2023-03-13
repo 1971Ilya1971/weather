@@ -1,0 +1,151 @@
+.big-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  min-height: 172px;
+
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  transition: filter var(--transition-base);
+}
+
+.big-card__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px 14px 20px;
+
+  background-color: var(--color-white);
+
+  transition: background-color var(--transition-base);
+}
+
+.big-card__city {
+  margin-left: 20px;
+
+  font-size: 30px;
+  line-height: 36px;
+
+  transition: color var(--transition-base);
+}
+
+.big-card__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px 24px 20px;
+
+  background-color: var(--color-light-grey);
+
+  transition: background-color var(--transition-base);
+}
+
+.big-card__weather-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: -2px;
+}
+
+.big-card__weather-conditions span {
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.big-card__weather-conditions span:last-child {
+  margin-right: 0;
+}
+
+.big-card__wind {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.big-card__wind-info {
+  margin-left: 10px;
+
+  color: var(--color-text-light-blue);
+
+  opacity: 0.8;
+
+  transition: color var(--transition-base);
+}
+
+.big-card__temperature {
+  margin-left: auto;
+
+  font-size: 64px;
+  line-height: 62px;
+  letter-spacing: -0.05em;
+
+  opacity: 0.8;
+
+  transition: color var(--transition-base);
+}
+
+.big-card:hover .big-card__city {
+  color: var(--color-text-white);
+}
+
+.big-card:hover .big-card__temperature,
+.big-card:hover .big-card__wind-info {
+  color: var(--color-text-white);
+}
+
+.big-card:hover .big-card__header {
+  background-color: var(--color-blue-light);
+}
+
+.big-card:hover .big-card__content {
+  background-color: var(--color-blue-main);
+}
+
+.big-card.active .big-card__city {
+  color: var(--color-text-white);
+}
+
+.big-card.active .big-card__temperature,
+.big-card.active .big-card__wind-info {
+  color: var(--color-text-white);
+}
+
+.big-card.active .big-card__header {
+  background-color: var(--color-blue-light);
+}
+
+.big-card.active .big-card__content {
+  background-color: var(--color-blue-main);
+}
+
+.big-card:active {
+  filter: drop-shadow(0 8px 20px rgba(11, 23, 78, 0.5));
+}
+
+.big-card--shadow {
+  opacity: 0.3;
+  background-color: var(--color-blue-light);
+}
+
+.big-card--shadow .big-card__header {
+  background-color: var(--color-transparent);
+}
+
+.big-card--shadow .big-card__content {
+  background-color: var(--color-blue-deep);
+}
+
+.big-card--shadow .big-card__city,
+.big-card--shadow .big-card__temperature,
+.big-card--shadow .big-card__wind-info {
+  color: var(--color-text-white);
+}
+
+.big-card--empty {
+  min-height: 172px;
+  background-color: rgba(247, 248, 255, 0.3);
+  border: 2px dashed var(--color-border);
+}

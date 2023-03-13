@@ -1,0 +1,58 @@
+.small-card {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding: 16px 20px;
+
+  background-color: var(--color-light-grey);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  transition: background-color var(--transition-base), filter var(--transition-base);
+}
+
+.small-card:hover {
+  background-color: var(--color-blue-light);
+}
+
+.small-card:hover .small-card__city,
+.small-card:hover .small-card__temperature {
+  color: var(--color-text-white);
+}
+
+.small-card__city {
+  flex-grow: 1;
+  margin-right: 20px;
+
+  transition: color var(--transition-base);
+}
+
+.small-card__temperature {
+  margin-right: 20px;
+
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+  transition: color var(--transition-base);
+}
+
+.small-card:active {
+  filter: drop-shadow(0 8px 20px rgba(11, 23, 78, 0.5));
+}
+
+.small-card.small-card--shadow {
+  background-color: var(--color-shadow-main);
+}
+
+.small-card--shadow .small-card__city,
+.small-card--shadow .small-card__temperature {
+  color: var(--color-text-white);
+}
+
+.small-card--empty {
+  min-height: 56px;
+  background-color: rgba(247, 248, 255, 0.3);
+  border: 2px dashed var(--color-border);
+}

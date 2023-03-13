@@ -1,0 +1,72 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon--arrow-down {
+  width: 20px;
+  height: 22px;
+
+  background-image: url("../../img/icon/icon-arrow-down.svg");
+}
+
+.icon--arrow-up {
+  width: 20px;
+  height: 22px;
+
+  background-image: url("../../img/icon/icon-arrow-up.svg");
+}
+
+.icon--strips-small {
+  width: 6px;
+  height: 16px;
+
+  background-image: url("../../img/icon/icon-strips-small.svg");
+}
+
+.icon--strips-big {
+  width: 6px;
+  height: 22px;
+
+  background-image: url("../../img/icon/icon-strips-big.svg");
+}
+
+.icon--rainy {
+  background-image: url("../../img/icon/icon-rainy.svg");
+}
+
+.icon--sunny {
+  background-image: url("../../img/icon/icon-sunny.svg");
+}
+
+.icon--cloudy {
+  background-image: url("../../img/icon/icon-cloudy.svg");
+}
+
+.icon--snowy {
+  background-image: url("../../img/icon/icon-snowy.svg");
+}
+
+.icon--stormy {
+  background-image: url("../../img/icon/icon-stormy.svg");
+}
+
+.icon--blizzard {
+  background-image: url("../../img/icon/icon-blizzard.svg");
+}
+
+.icon--metorite {
+  background-image: url("../../img/icon/icon-metorite.svg");
+}
+
+.icon--wind {
+  background-image: url("../../img/icon/icon-wind.svg");
+}

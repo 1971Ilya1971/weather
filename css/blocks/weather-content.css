@@ -1,0 +1,69 @@
+.weather-content__result {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2px 4px 0 4px;
+}
+
+.weather-content__small-cards,
+.weather-content__big-cards {
+  width: calc(50% - 2px);
+  height: 100%;
+  padding-bottom: 100px;
+  overflow-y: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.weather-content__small-cards::-webkit-scrollbar,
+.weather-content__big-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.weather-content__small-cards > div,
+.weather-content__big-cards > div {
+  margin-bottom: 2px;
+}
+
+.weather-content__small-cards > div:last-child,
+.weather-content__big-cards > div:last-child {
+  margin-bottom: 80px;
+}
+
+.weather-content__big-cards {
+  position: relative;
+  z-index: 1;
+}
+
+.weather-content__help {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  padding-right: 65px;
+  padding-left: 65px;
+
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-text-help);
+}
+
+.weather-content__sort .sort-form__group:nth-child(1) {
+  width: 82px;
+}
+
+.weather-content__sort .sort-form__group:nth-child(1) div:nth-child(2n) {
+  margin-right: 0;
+}
+
+.weather-content__sort .sort-form__group:nth-child(3) {
+  width: 292px;
+}
+
+.weather-content__sort .sort-form__group:nth-child(3) div:nth-child(7n) {
+  margin-right: 0;
+}

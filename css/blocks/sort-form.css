@@ -1,0 +1,37 @@
+.sort-form {
+  display: flex;
+}
+
+.sort-form form {
+  display: flex;
+  min-width: 712px;
+  padding: 12px 20px;
+
+  background-color: var(--color-blue-main);
+}
+
+.sort-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-bottom: -2px;
+}
+
+.sort-form__group:last-child {
+  margin-right: 0;
+}
+
+.sort-form__group > div {
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.sort-form__group > div:last-child {
+  margin-right: 0;
+}
+
+.sort-form__group > div:last-child {
+  margin-right: 0;
+}
